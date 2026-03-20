@@ -41,7 +41,10 @@ public class Usuario implements UserDetails {
 
     @Column(nullable = false, length = 20)
     private String status;
-
+    
+    @Column(name = "foto_url")
+    private String fotoUrl;
+    
     @CreationTimestamp
     @Column(name = "data_cadastro", nullable = false, updatable = false)
     private LocalDateTime dataCadastro;
