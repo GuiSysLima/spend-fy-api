@@ -16,12 +16,15 @@ public class AuthResponse {
     private Long id;
     private String nome;
     private String email;
+    private String fotoUrl;
 
-    public AuthResponse(String token, Long id, String nome, String email) {
+    public AuthResponse(String token, Long id, String nome, String email, String fotoUrl) {
         this.token = token;
         this.tipo = "Bearer";
         this.id = id;
         this.nome = nome;
         this.email = email;
+        this.fotoUrl = fotoUrl;
+        
     }
 }
